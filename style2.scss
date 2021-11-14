@@ -1,0 +1,17 @@
+.haunted-text {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    max-width: 680px;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    font-size: 2.4rem;
+    line-height: 1.4;
+    text-align: center;
+    visibility: hidden;
+  
+    .blast {
+      will-change: opacity, filter;
+    }
+}

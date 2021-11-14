@@ -1,0 +1,382 @@
+body{
+    width: 100%;
+    margin: 0px;
+    background-color: black;
+    overflow: hidden;
+}
+
+#top_letter{
+    position: relative;
+    text-align: center;
+    font-family: "nanummyoungjo", serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 120%;
+    color: aliceblue;
+    z-index: 4;
+    opacity: 0;
+    animation: fadeInText 3s 5s ease-out forwards;
+
+}
+
+#bot_letter{
+    position: relative;
+    text-align: center;
+    top: 17%;
+    font-family: "nanummyoungjo", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100%;
+    color: aliceblue;
+    z-index: 4;
+    opacity: 0;
+    animation: fadeInText 3s 5s ease-out forwards;
+
+}
+
+
+
+@-webkit-keyframes fadeInText {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#top_letter::after{
+
+}
+
+
+
+#container{
+    width: 1920px;
+    height: 1080px;
+    margin: 0%;
+    position:absolute;
+    
+    top: 0px;
+    left: 0px;
+    
+  
+
+}    
+.cover {
+    position: relative;
+    z-index: 110;
+    background-color: black;
+    width:100vw;
+    height:130vh;
+    animation: cover_anim 5s ease-in-out forwards;
+    animation-delay: 3s;
+    
+}
+
+@-webkit-keyframes cover_anim {
+    0% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+       
+        z-index: -99;
+    }
+}
+.screen_frontType {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-weight: 600;
+    color: white;
+    position: relative;
+    top: 40%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 350%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+  }
+.anim-typewriter {
+    animation: typewriter 1s steps(14) 1s 1 normal both,
+      blinkTextCursor 700ms steps(9) infinite normal;
+  }
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 6.6em;
+      display: none;
+    }
+  }
+  @keyframes blinkTextCursor {
+    from {
+      border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
+#item_01{
+    width: 1920px;
+    height: 1080px;
+    
+    background-image: url("img/lip_bk.gif");
+    position: absolute;
+   top: 0px;
+   left: 0px;
+   z-index: 3;
+
+}
+
+#item_02{
+    width: 400px;
+    height: 400px;
+    background-color: rgba( 255, 255, 255, 0 );
+    position: absolute;
+    left: 39%;
+    top: 30%;
+    z-index: 5;
+    cursor: pointer;
+}
+
+
+
+#item_02:active{
+    width: 1920px;
+    height: 1080px;
+    margin: 0%;
+    left: 0%;
+    top: 0%;
+    background-image: url("img/bg.gif");
+    
+    position: absolute;
+   
+   
+    
+}
+
+
+   
+    
+
+
+#mov video{
+    width: 1920px;
+    height: 1080px;
+    margin: 0%;
+    position: absolute;
+    z-index: 0;
+}
+  
+
+
+
+
+
+
+#photo_01{
+    width: 14%;
+    height: 38%;
+    position: absolute;
+    top: 7%;
+    left: 30%;
+    
+    background-image: url("img/f1.png");
+    background-size: cover;
+    z-index: 6;
+}
+
+#photo_02{
+    width: 14%;
+    height: 28%;
+    position: absolute;
+    top: 7%;
+    left: 42%;
+    
+    background-image: url("img/f2.png");
+    background-size: cover;
+    z-index: 6;
+}
+
+#photo_03{
+    width: 14%;
+    height: 36%;
+    position: absolute;
+    top: 8%;
+    left: 54%;
+    
+    background-image: url("img/f3.png");
+    background-size: cover;
+    z-index: 6;
+}
+
+#photo_04{
+    width: 14%;
+    height: 42%;
+    position: absolute;
+    top: 33%;
+    left: 30%;
+    
+    background-image: url("img/f4.png");
+    background-size: cover;
+    z-index: 6;
+}
+
+#photo_05{
+    width: 20%;
+    height: 30%;
+    position: absolute;
+    top: 32%;
+    left: 40%;
+    
+    background-image: url("img/f5.png");
+    background-size: cover;
+    z-index: 6;
+}
+
+#photo_06{
+    width: 12%;
+    height: 31%;
+    position: absolute;
+    top: 37%;
+    left: 56.5%;
+    
+    background-image: url("img/f6.png");
+    background-size: cover;
+    z-index: 6;
+}
+
+#photo_07{
+    width: 13.6%;
+    height: 28%;
+    position: absolute;
+    top: 67%;
+    left: 30%;
+    
+    background-image: url("img/f7.png");
+    background-size: cover;
+    z-index: 6;
+}
+
+
+#photo_08{
+    width: 18%;
+    height: 40.8%;
+    position: absolute;
+    top: 54%;
+    left: 41.9%;
+    
+    background-image: url("img/f8.png");
+    background-size: cover;
+    z-index: 6;
+}
+
+
+#photo_09{
+    width: 13%;
+    height: 33%;
+    position: absolute;
+    top: 62.8%;
+    left: 55.2%;
+    
+    
+    background-image: url("img/f9.png");
+    background-size: cover;
+    z-index: 6;
+}
+
+
+.drag{
+    position:absolute;
+    cursor:hand;
+    z-index: 100;
+    }
+    
+
+
+
+
+/*#abc{
+    left: 500px;
+    position: fixed;
+}       
+
+#back{
+    
+background-image: url(img/lip.gif);
+background-repeat: no-repeat;
+position: absolute;
+background-size: 100%;
+}
+
+
+
+#photo1{
+    position: absolute;
+    top: 100px;
+    left: 80%;
+    
+}
+
+
+#photo2{
+    position: absolute;
+    top: 100px;
+    left: 300px;
+}
+
+#photo3{
+    position: absolute;
+    top: 100px;
+    left: 500px;
+}
+
+#photo4{
+    position: absolute;
+    top: 300px;
+    
+    
+}
+
+#photo5{
+    position: absolute;
+    top: 300px;
+    left: 300px;
+}
+
+#photo6{
+    position: absolute;
+    top: 300px;
+    left: 500px;
+}
+
+#photo7{
+    position: absolute;
+    top: 500px;
+}
+
+#photo8{
+    position: absolute;
+    top: 500px;
+    left: 300px;
+}
+
+#photo9{
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    
+}
+*/
+
